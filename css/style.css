@@ -12,14 +12,28 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--navy-blue-color);
   background-color: var(--body-background-color);
-  font-size: 16px;
 }
 
-.list {
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
-/*---Logo---*/
+img {
+  display: block;
+}
+
+/* Logo */
 .logo-part-one {
   color: var(--iris-color);
   font-family: Raleway;
@@ -34,41 +48,20 @@ body {
   color: var(--navy-blue-color);
 }
 
-.page-header {
-  background-color: var(--navy-blue-color);
-}
-
-.page-header-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: var(--body-background-color);
-}
-
-/*---Footer--*/
-.page-footer {
-  background-color: var(--navy-blue-color);
-}
-
 .logo-part-two-footer {
   color: var(--cloud-color);
 }
 
-.footer-descript {
-  color: var(--cornflower-color);
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower-color);
 }
 
-/*---Links---*/
-.link {
-  text-decoration: none;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--ocean-color);
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -80,41 +73,171 @@ body {
   color: var(--ocean-color);
 }
 
-.contacts {
-  font-style: normal;
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  margin-left: 76px;
 }
 
 .contact-link {
   color: var(--slate-color);
 }
 
-/*---Buttons---*/
+.contact-items {
+  display: flex;
+  align-items: center;
+}
+
+.contact-items,
+.menu-items {
+  gap: 40px;
+}
+
+/* Studio Page Header */
+.studio-page-header {
+  background-color: var(--navy-blue-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.studio-page-header-content {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--body-background-color);
+  text-align: center;
+}
+
+/* Footer */
+.page-footer {
+  background-color: var(--navy-blue-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-descript {
+  color: var(--cornflower-color);
+  margin-top: 16px;
+}
+
+.footer-container {
+  width: 264px;
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean-color);
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+
+/* Buttons */
 .btn {
-  font-family: Roboto;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  border: none;
 }
 
-.main-btn {
-  color: var(--body-background-color);
-  background-color: var(--iris-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.main-btn:hover,
-.main-btn:focus {
+.page-header-btn:hover,
+.page-header-btn:focus {
   background-color: var(--ocean-color);
 }
 
+.page-header-btn {
+  font-size: 16px;
+  color: var(--body-background-color);
+  background-color: var(--iris-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: none;
+}
+
+/* Features Section */
+.features-card-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-card-item {
+  width: 264px;
+}
+
+.features-card-items,
+.direction-items,
+.team-card-items,
+.filter-items {
+  gap: 24px;
+}
+
+/* Directions Section - What Are We Doing */
+.directions {
+  padding-bottom: 120px;
+}
+
+.direction-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+
+.direction-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+/* Our Teams Section */
+.team {
+  background-color: var(--cloud-color);
+}
+
+.team-card-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+
+.team-card-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+/* Portfolio Section */
+/* Filter */
 .filter-btn {
+  font-size: 16px;
   color: var(--iris-color);
   background-color: var(--cloud-color);
   border: 1px solid var(--cornflower-color);
+  padding: 12px 24px;
 }
 
 .filter-btn:hover,
@@ -125,7 +248,51 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-card-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 48px 24px;
+}
+
+.portfolio-card-item {
+  background-color: var(--body-background-color);
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-title-link {
+  color: var(--navy-blue-color);
+}
+
+.portfolio-card-border {
+  border-left: 1px solid var(--cornflower-color);
+  border-right: 1px solid var(--cornflower-color);
+  border-bottom: 1px solid var(--cornflower-color);
+}
+
 /*---Cards---*/
+.card-wrapper {
+  padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+}
+
 .card-title {
   font-weight: 500;
   font-size: 20px;
@@ -137,6 +304,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  margin-top: 8px;
 }
 
 /*---Parts---*/
@@ -146,10 +314,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-}
-
-.part-title-hidden {
-  opacity: 0;
+  text-align: center;
 }
 
 /*-- Part hidden--*/
@@ -164,4 +329,22 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+/* ========== */
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
