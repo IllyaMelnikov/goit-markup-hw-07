@@ -333,6 +333,7 @@ img {
   height: 100%;
   background: #4d5ae5;
   border-radius: 50%;
+  fill: var(--color-second-white);
 }
 
 .site-link:hover,
